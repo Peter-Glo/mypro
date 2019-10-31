@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>object</title>
+</head>
+<body>
+<input type="" placeholder="Name" id="name" name="">
+<input type="" placeholder="Author" id="author" name="">
+<input type="" placeholder="No of pages" id="pages" name="">
+<button onclick="set(event)">OK</button>
+
+<script type="text/javascript">
+	function set(e) {
+		// body...
+	
+	var obj = [JSON.stringify(N+A+P)];
+  var N = document.getElementById('name').value;
+  var A = document.getElementById('author').value;
+  var P = document.getElementById('pages').value;
+
+  obj.push(N , A , P);
+  localstorage.obj= JSON.stringify(N + A + P);
+  console.log(obj);
+}
+</script>
+</body>
+</html>
