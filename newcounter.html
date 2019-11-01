@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transport count</title>
+	<script type="text/javascript" src="newcounter.js"></script>
+	<style type="text/css">
+		#wel{
+			width: 13%;
+			background-color: transparent;
+			border: none;
+			
+		}
+		#wel1{
+			width: 57%;
+			background-color: transparent;
+			border: none;
+
+		}
+#pop{
+display: none;
+	height: 280px;
+		margin-top: 5%;
+	margin-left: 30%;
+	position: fixed;
+	z-index: 1;
+	box-shadow: 0 5px 10px, 10px 5px;
+	border: 2px solid blue;
+	transition-delay: 60s;
+	/*transition: 100s;*/
+
+}
+#add{
+	float: right;
+	margin-top: 30%;
+	box-shadow: 0 2px 3px;
+
+}
+
+#button{
+	box-shadow: 0 2px 3px;
+	font-size: 50px;
+	border-radius: 35%;	
+	background-color: red;
+	color: white;
+}
+#gory, #cription{
+	margin: 20px;
+	box-shadow: 0 2px 3px;
+}
+.wep{
+	margin-left: 100%;
+	margin-top: -2%;
+	background-color: grey;
+	color: blue;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+
+#histo{
+	width: 10%;
+	height: 30px;
+	float: right;
+	box-shadow: 0 2px 3px;
+	background-color: transparent;
+	border: none;
+}
+#histo:hover::after{
+	content: "History";
+	color: red;
+	transition: 3s;
+	font-size: 15px;
+	/*background-color: orange;*/
+}	
+#button:hover::top{
+	content: "add Category";
+	color: red;
+}
+
+
+	</style>
+</head>
+<body onload="unstart()">
+<div id="topinput">
+	<input type="" id="wel" name="" disabled>&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="" id="wel1" name="" disabled>
+<button onclick="hist()" id="histo"></button>
+</div>
+<br>
+<nav id="history"></nav>
+<br>
+<div id="pop"><button class="wep" onclick="cl()">&times;</button>
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category Name!!<br>
+			<input type="text" id="gory" name=""><br><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Write Discription...<br><br>
+			<input type="text" id="cription" name=""><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="include()">Include</button>
+</div>
+<br>
+<div id="add">
+	<button id="button" onclick="add()">ADD</button>
+</div>
+<div id="result"></div>
+
+</body>
+</html>
