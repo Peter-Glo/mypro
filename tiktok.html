@@ -25,23 +25,44 @@
 </head>
 <body>
 	<div id="allbtn">
-<button id="var" onclick="set(event)"></button>
-<button id="var" onclick="set(event)"></button>
-<button id="var" onclick="set(event)"></button><br>
-<button id="var" onclick="set(event)"></button>
-<button id="var" onclick="set(event)"></button>
-<button id="var" onclick="set(event)"></button><br>
-<button id="var" onclick="set(event)"></button>
-<button id="var" onclick="set(event)"></button>
-<button id="var" onclick="set(event)"></button>
+<button id="bar" onclick="set(event)"></button>
+<button id="bar1" onclick="set(event)"></button>
+<button id="bar2" onclick="set(event)"></button><br>
+<button id="bar3" onclick="set(event)"></button>
+<button id="bar4" onclick="set(event)"></button>
+<button id="bar5" onclick="set(event)"></button><br>
+<button id="bar6" onclick="set(event)"></button>
+<button id="bar7" onclick="set(event)"></button>
+<button id="bar8" onclick="set(event)"></button>
 
 
 </div>
 
 <script type="text/javascript">
-	function set(e) {
-		document.getElementById('var').style.display = "X";
-		console.log("var");
+	function set(event) {
+		var wow = document.getElementById('bar');
+		var wo = document.getElementById('bar1');
+		var ww = document.getElementById('bar2');
+		var w = document.getElementById('bar3');
+		var ow = document.getElementById('bar4');
+		var o = document.getElementById('bar5');
+		var p = document.getElementById('bar6');
+		var u = document.getElementById('bar7');
+		var up = document.getElementById('bar8');
+		// wow="x";
+		// wow.innerText = "x";
+		
+		wow.innerHTML = "X" &&  "O";
+		wo.innerHTML = "X" &&  "O";
+		ww.innerHTML = "X" &&  "O";
+		ow.innerHTML = "X" &&  "O";
+		w.innerHTML = "X" &&  "O";
+		o.innerHTML = "X" &&  "O";
+		p.innerHTML = "X" &&  "O";
+		u.innerHTML = "X" &&  "O";
+		up.innerHTML = "X" &&  "O";
+		alert(wow);
+		console.log(wow);
 	}
 
 </script>
